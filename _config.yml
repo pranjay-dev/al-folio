@@ -157,6 +157,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-gist
+  - jekyll-mermaid
 
 # Sitemap settings
 defaults:

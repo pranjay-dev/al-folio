@@ -19,4 +19,5 @@ group :jekyll_plugins do
     gem 'htmlbeautifier'
     gem 'jekyll-include-cache'
     gem 'jekyll-gist'
+    gem 'jekyll-mermaid'
 end
