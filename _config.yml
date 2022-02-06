@@ -150,7 +150,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-imagemagick
   - jekyll-paginate-v2
-  - jekyll/scholar
+  - jekyll-scholar
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-twitter-plugin
@@ -158,7 +158,6 @@ plugins:
   - jekyll-include-cache
   - jekyll-gist
   - jekyll-mermaid
-  - jekyll-scholar
 
 # Sitemap settings
 defaults:
