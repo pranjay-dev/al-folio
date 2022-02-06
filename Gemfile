@@ -18,4 +18,5 @@ group :jekyll_plugins do
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
     gem 'jekyll-include-cache'
+    gem 'jekyll-gist'
 end

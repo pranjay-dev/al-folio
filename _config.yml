@@ -156,6 +156,7 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
   - jekyll-include-cache
+  - jekyll-gist
 
 # Sitemap settings
 defaults:
