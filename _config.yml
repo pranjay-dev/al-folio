@@ -189,7 +189,7 @@ imagemagick:
   enabled: true
   widths:
     - 480
-    - 800
+    - 900
     - 1400
   input_directories:
     - assets/img
