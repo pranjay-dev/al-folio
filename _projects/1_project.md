@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: DIDH
+description: Towards Domain Invariant Single Image Dehazing
 img: assets/img/12.jpg
 importance: 1
-category: work
+github: eaplatanios/symphony-mt
 ---
 
 Every project has a beautiful feature showcase page.

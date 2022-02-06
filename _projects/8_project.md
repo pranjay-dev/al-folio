@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DIVSS
+title: wvss
 importance: 1
-description: Towards Domain Invariant Video Semantic Segmentation using Self-Supervised Distillation of Vision Transformers
+description: Weakly Supervised Video Semantic Segmentation via Multi-Instance Iterative Discriminative Part Removal and Temporal Regularization
 img: assets/img/1.jpg
-github: https://github.com/pranjay-dev/DIVSS
+github: https://github.com/pranjay-dev/WVSS
 wordpress: 
 ---
 

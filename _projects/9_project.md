@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DIVSS
+title: hydisc
 importance: 1
-description: Towards Domain Invariant Video Semantic Segmentation using Self-Supervised Distillation of Vision Transformers
+description: Hybrid Discriminators for Enhanced Image Restoration and Enabling Domain Invariant Performance
 img: assets/img/1.jpg
-github: https://github.com/pranjay-dev/DIVSS
+github: https://github.com/pranjay-dev/HyDisc
 wordpress: 
 ---
 

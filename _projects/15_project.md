@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DIVSS
+title: jold
 importance: 1
-description: Towards Domain Invariant Video Semantic Segmentation using Self-Supervised Distillation of Vision Transformers
+description: Weakly Supervised Approach for Joint Object and Lane Marking Detection
 img: assets/img/1.jpg
-github: https://github.com/pranjay-dev/DIVSS
+github: https://github.com/pranjay-dev/JOLD
 wordpress: 
 ---
 

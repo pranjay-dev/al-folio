@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DIVSS
+title: diol
 importance: 1
-description: Towards Domain Invariant Video Semantic Segmentation using Self-Supervised Distillation of Vision Transformers
+description: Domain Invariant Object and Lane Detection via Unsupervised Domain Adaption for Video Segmentation
 img: assets/img/1.jpg
-github: https://github.com/pranjay-dev/DIVSS
+github: https://github.com/pranjay-dev/DIOL
 wordpress: 
 ---
 

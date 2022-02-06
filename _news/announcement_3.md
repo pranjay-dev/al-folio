@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-01-03
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+[Inference Code]() and [Paper]() for 'Domain Generalization for Semantic Segmentation using Iterative Style Mining and Latent Representation Alignment' are open sourced.

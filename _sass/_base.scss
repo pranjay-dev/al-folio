@@ -4,12 +4,8 @@
 
 // Typography
 
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
-}
-
-hr {
-  border-top: 1px solid var(--global-divider-color);
 }
 
 a, table.table a {
@@ -18,21 +14,9 @@ a, table.table a {
     color: var(--global-theme-color);
     text-decoration: underline;
   }
-  &:hover:after :not(.nav-item.dropdown) {
+  &:hover:after {
     width: 100%;
   }
-}
-
-figure, img {
-  max-width: 90vw;
-}
-
-blockquote {
-  background: var(--global-bg-color);
-  border-left: 2px solid var(--global-theme-color);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  font-size: 1.2rem;
 }
 
 // Math
@@ -51,21 +35,19 @@ blockquote {
   text-align: center;
 }
 
-// Citation
-.citation, .citation-number {
-  color: var(--global-theme-color);
-}
 
 // Profile
 
 .profile {
   margin-left: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
 
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 1.2rem;
     p {
       display: inline-block;
       margin: 0;
@@ -99,31 +81,12 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  border-bottom: 1px solid $grey-color-light;
   opacity: 0.95;
-}
-.navbar .dropdown-menu {
   background-color: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
-  a:not(.active) {
-    color: var(--global-text-color);
-  }
-  a:hover {
-    color: var(--global-hover-color);
-  }
-  .dropdown-divider {
-    border-top: 1px solid var(--global-divider-color) !important;
-  }
-}
-.dropdown-item {
-  color: var(--global-text-color);
-    &:hover {
-      color: var(--global-hover-color);
-      background-color: var(--global-bg-color);
-    }
 }
 .navbar.navbar-light {
+  // Remove link decoration
   a {
     &:hover {
       text-decoration: none;
@@ -146,19 +109,11 @@ blockquote {
         color: var(--global-hover-color);
       }
   }
-  .navbar-brand.social {
-    padding-bottom: 0;
-    padding-top: 0;
-    font-size: 1.7rem;
+  .contact-icon {
+    font-size: 2rem;
     a {
-      i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
-      }
       &:hover {
-        i::before {
-          color: var(--global-theme-color);
-        }
+        color: var(--global-hover-color);
       }
     }
   }
@@ -169,7 +124,7 @@ blockquote {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-color);
+    background-color: $grey-color-dark;
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -215,17 +170,12 @@ blockquote {
 
 .social {
   text-align: center;
-  .contact-icons {
+  .contact-icon {
     font-size: 4rem;
     a {
-      i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
-      }
+      color: var(--global-icon-color);
       &:hover {
-        i::before {
-          color: var(--global-theme-color);
-        }
+        color: var(--global-theme-color);
       }
     }
   }
@@ -247,14 +197,14 @@ footer.fixed-bottom {
   a {
     color: var(--global-footer-link-color);
     &:hover {
-      color: var(--global-theme-color);
+      color: pink;
       text-decoration: none;
     }
   }
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 1px solid $grey-color-light;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
@@ -264,7 +214,7 @@ footer.sticky-bottom {
 // Blog
 
 .header-bar {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid $grey-color-light;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -279,19 +229,14 @@ footer.sticky-bottom {
   margin-bottom: 40px;
   padding: 0;
   li {
-    border-bottom: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid $grey-color-light;
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
     .post-meta {
-      color: var(--global-text-color-light);
+      color: $grey-color;
       font-size: 0.875rem;
       margin-bottom: 0;
-    }
-    .post-tags {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      padding-top: 0.25rem;
     }
     a {
       color: var(--global-text-color);
@@ -312,7 +257,6 @@ footer.sticky-bottom {
       }
     }
     &.active .page-link {
-      color: $white-color;
       background-color: var(--global-theme-color);
       &:hover {
         background-color: var(--global-theme-color);
@@ -335,47 +279,19 @@ footer.sticky-bottom {
 // Projects
 
 .projects {
-  a {
-    text-decoration: none;
-
-    &:hover {
-      .card-title {
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
         color: var(--global-theme-color);
       }
     }
   }
-
-  .card {
-    img {
-      width: 100%;
-    }
-    .card-title {
-      color: $black-color;
-    }
-  }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
-  }
-
-  h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
+  .card img {
+    width: 100%;
   }
 }
 
@@ -398,8 +314,8 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
+    color: $grey-color-light;
+    border-top: 1px solid $grey-color-light;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -467,7 +383,7 @@ footer.sticky-bottom {
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
+        -webkit-transition: 0.15s ease;
         -moz-transition: 0.15s ease;
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
@@ -485,7 +401,7 @@ footer.sticky-bottom {
       }
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
+        -webkit-transition: 0.15s ease;
         -moz-transition: 0.15s ease;
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
@@ -502,30 +418,9 @@ footer.sticky-bottom {
 }
 
 // Rouge Color Customization
-figure.highlight {
-  margin: 0 0 1rem;
-}
-
-pre {
-  color: var(--global-theme-color);
-  background-color: var(--global-code-bg-color);
-  border-radius: 6px;
-  padding: 6px 12px;
-  pre, code {
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-  }
-}
-
 code {
   color: var(--global-theme-color);
-  background-color: var(--global-code-bg-color);
-  border-radius: 3px;
-  padding: 3px 3px;
 }
-
-
 // Transitioning Themes
 html.transition,
 html.transition *,
@@ -535,35 +430,8 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-// Extra Markdown style (post Customization)
-.post{
-  .post-meta{
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
-    margin-bottom: 0;
-  }
-  .post-tags{
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
-    padding-bottom: 1rem;
-    a {
-      color: var(--global-text-color-light);
-      text-decoration: none;
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-  .post-content{
-        blockquote {
-          border-left: 5px solid var(--global-theme-color);
-          padding: 8px;
-      }
-}
-}
 
-.post-tags {
-  color: var(--global-text-color-light);
-  font-size: 0.875rem;
-  padding-top: 0.25rem;
+.anchor {
+  scroll-margin-top: 5em;
 }
+  

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DIVSS
+title: dgss
 importance: 1
-description: Towards Domain Invariant Video Semantic Segmentation using Self-Supervised Distillation of Vision Transformers
+description: Domain Generalization for Semantic Segmentation using Iterative Style Mining and Latent Representation Alignment
 img: assets/img/1.jpg
-github: https://github.com/pranjay-dev/DIVSS
+github: https://github.com/pranjay-dev/DGSS
 wordpress: 
 ---
 

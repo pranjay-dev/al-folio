@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DIVSS
+title: gld
 importance: 1
-description: Towards Domain Invariant Video Semantic Segmentation using Self-Supervised Distillation of Vision Transformers
+description: Blind Single-image Super-resolution via Global-local Degradation Model and Autoencoder-based Noise Generation
 img: assets/img/1.jpg
-github: https://github.com/pranjay-dev/DIVSS
+github: https://github.com/pranjay-dev/GLD
 wordpress: 
 ---
 
