@@ -158,6 +158,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-gist
   - jekyll-mermaid
+  - jekyll-scholar
 
 # Sitemap settings
 defaults:
