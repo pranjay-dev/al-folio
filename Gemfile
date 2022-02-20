@@ -17,4 +17,7 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
+    gem 'jekyll-include-cache'
+    gem 'jekyll-gist'
+    gem 'jekyll-mermaid'
 end
