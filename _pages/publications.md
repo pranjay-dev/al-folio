@@ -12,10 +12,10 @@ sort: 3
 <!-- * denotes equal contribution -->
 <!-- <h1> preprints </h1> -->
 
-<h1> Conferences and Workshops</h1>
+<!-- <h1> Conferences and Workshops</h1> -->
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}},category=conference]* %}
+  {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
 
 </div>
