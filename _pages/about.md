@@ -15,6 +15,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 I am a Ph.D. candidate in [Mechatronics Systems and Control Lab](http://msc.kaist.ac.kr/) at [KAIST](https://kaist.ac.kr/en/) advised by Prof. [Kyung-Soo Kim](http://msc.kaist.ac.kr/bbs/board.php?bo_table=Professor&wr_id=8) and co-advised by Prof. [Kuk-Jin Yoon](http://vi.kaist.ac.kr/project/kuk-jin-yoon/). My research focuses on developing next-generation sensor fusion approaches to ensure robust perception for autonomous systems. Such sensor fusion approaches have the following characterisitcs,  
+
 * Long Range Detection, Classification and Tracking of Objects of Interest.
 * Consistent performance in adverse weather and illumination conditions. 
 * Reduced requirement of annotated training datasets.
