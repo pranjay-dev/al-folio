@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-02-22
+date: 2022-03-21
 inline: true
 ---
 
-1 paper accepted in MDPI Remote Sensing (IF=4.848)
+2nd position in SSHODC (PBVS 2022 @ CVPR 2022).
